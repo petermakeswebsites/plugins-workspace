@@ -20,9 +20,9 @@ Install the Core plugin by adding the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-tauri-plugin-positioner = "1.0"
+tauri-plugin-positioner = { version = "1.0", features = ["system-tray"] }
 # or through git
-tauri-plugin-positioner = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "dev" }
+tauri-plugin-positioner = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "dev", features = ["system-tray"]  }
 ```
 
 You can install the JavaScript Guest bindings using your preferred JavaScript package manager:
